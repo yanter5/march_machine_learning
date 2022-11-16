@@ -21,9 +21,11 @@ K=181 returned the lowest logloss after grid search analysis and was the number 
 
 # Explanation:
 Matchup similarity was determined by taking the difference in the normalized team stats discussed above.
+
 Each game had 2 entries for matchup difference:
   1. Home Team - Away Team
   2. Away Team - Home Team
+  
 I did this because I realized that two matchups between the same teams would not register as being remotely similar if home and away teams were flipped for one of them. 
 
 Example: 
