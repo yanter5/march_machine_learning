@@ -3,6 +3,7 @@ Kaggle submission for march madness bracket prediction contest
 
 # Approach:
 -K-nearest neighbors algorithm
+
 -Predicted win percentages by pulling game outcomes from k-nearest matchups in all regular season matchups since 2003
 
 # Model:
