@@ -42,7 +42,7 @@ We will suppose that Team B is exactly 1 greater than Team A in all variables.
     
   2. Team B - Team A
   
-     1  1  1  1  1  1  1
+    1  1  1  1  1  1  1
      
 When identifying similar matchups to predict the outcome in a neutral setting like the NCAA tournament I wanted to find games with similar team difference profiles to our game. However, if I was to only log one entry for each game we would miss many close matchups that I would like to use in my win percentage prediction. Logging both differences allows me to capture every game in the database for comparison with the tournament matchup.
 
