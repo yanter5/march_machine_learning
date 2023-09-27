@@ -16,7 +16,7 @@ Matchup similarity was based on the following variables:
   4. Three point percentage
   5. Free throw percentage
   6. Assist/TO ratio
-  7. Turnovers allowed
+  7. Turnovers forced
   
 Each of these were normalized due to the nature of KNN algorithm not requiring any assumptions about the data.
 Each team was treated as a completely different team year to year. That is, 2018 Alabama would have entirely different stats from 2019 Alabama.
