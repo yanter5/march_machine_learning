@@ -1,10 +1,11 @@
 # march_machine_learning
 Kaggle submission for march madness bracket prediction contest
 
-# Approach:
--K-nearest neighbors algorithm
+# Goal:
+Generate predictions for the 2022 NCAA Tournament using historical box score data. Submissions are scored on logloss error. Every possible matchup is to be submitted before the tournament.
 
--Predicted win percentages by pulling game outcomes from k-nearest matchups in all regular season matchups since 2003
+# Approach:
+I chose to use the difference in team stats as the matchup for each game, and chose to include every game since 2003, since I thought games played earlier than that wouldn't necessarily reflect the nature of today's game. Thus, I aggregated team stats across each season for each team to build a database of team stats. You can see which stats I included below. Then, for each matchup played in the season, I took the difference in those stats for the two teams playing. Next, I applied a K-nearest neighbors algorithm to the training set and tested it on a subset, eventually landing on k=181 as the optimal model. I used the 2022 season-to-date team stats to generate the matchup profile, and took the average win percentage across the 181 closest matchups to generate the expected win % for each team. This number was the final submission.
 
 # Model:
 Matchup similarity was based on the following variables:
